@@ -6,10 +6,8 @@ function App() {
     return (
     <div className="App container">
         <div className="row row-cols-3">
-            <Character className="col" character={characters[0]}/>
-            <Character className="col" character={characters[1]}/>
+            {characters.map((character) => <Character className="col" character={character} />)}
         </div>
-
     </div>
   );
 }
